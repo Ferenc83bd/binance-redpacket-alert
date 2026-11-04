@@ -8,9 +8,16 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Binance CLI
+        run: npm run build --prefix node_modules/binance-square-cli
+
       - name: Find profile
         run: node node_modules/binance-square-cli/dist/index.js user BTCxiao6 --pretty
