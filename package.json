@@ -1,0 +1,11 @@
+{
+  "name": "binance-redpacket-alert",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "binance-square-cli": "github:QuantProcessing/binance-square-cli"
+  }
+}
