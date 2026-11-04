@@ -7,6 +7,12 @@
     "build": "tsc"
   },
   "dependencies": {
-    "binance-square-cli": "github:QuantProcessing/binance-square-cli"
+    "playwright": "^1.48.0",
+    "commander": "^12.1.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
   }
 }
